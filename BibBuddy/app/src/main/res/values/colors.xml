@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="flirt">#A4036F</color>
+    <color name="flirt_dark">#8C035E</color>
+    <color name="flirt_light">#F005A2</color>
+    <color name="tiffany">#02C3BD</color>
+    <color name="tiffany_dark">#018D89</color>
+    <color name="black">#161925</color>
+    <color name="white">#FAFAFF</color>
+</resources>
