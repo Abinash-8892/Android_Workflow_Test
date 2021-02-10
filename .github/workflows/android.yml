@@ -27,13 +27,15 @@ jobs:
         #Working directory is the folder with the project
         working-directory: ./BibBuddy
         run: bash ./gradlew test --stacktrace
-      - name: Run java checkstyle
+
+      #command: Run java checkstyle
+      - name: Run Java Checkstyle
         # You may pin to the exact commit or the version.
         # uses: nikitasavinov/checkstyle-action@d236d4d9a3563684368581f1127f7e4773013e9d
         uses: nikitasavinov/checkstyle-action@0.3.1
         with:
           checkstyle_config: google_checks.xml
- 
+          tool_name: Java Checkstyle
 
   apk:
     name: APK
