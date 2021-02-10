@@ -22,13 +22,13 @@ jobs:
         with:
           java-version: 1.8
       
-      #command: run the test
+      #command: run unit tests
       - name: Run Build Test
         #Working directory is the folder with the project
         working-directory: ./BibBuddy
         run: bash ./gradlew test --stacktrace
 
-      #command: Run java checkstyle
+      #command:  Run Java Checkstyle
       - name: Run Java Checkstyle
         # You may pin to the exact commit or the version.
         # uses: nikitasavinov/checkstyle-action@d236d4d9a3563684368581f1127f7e4773013e9d
@@ -71,16 +71,16 @@ jobs:
           name: apk_file
 
       #Create a release for a tag in your repository           
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1.1.4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        with:
+      #- name: Create Release
+        #id: create_release
+        #uses: actions/create-release@v1.1.4
+        #env:
+        #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        #with:
           #The name of the tag for this release
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: This is a release of the created APK
+          #tag_name: ${{ github.ref }}
+          #release_name: Release ${{ github.ref }}
+          #body: This is a release of the created APK
           
           #Additional inputs (see https://github.com/actions/create-release)
           #body_path: A file with contents describing the release. Optional, and not needed if using body.
