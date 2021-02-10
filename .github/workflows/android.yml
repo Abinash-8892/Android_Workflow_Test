@@ -5,8 +5,7 @@ name: APK Workflow
 #execute the jobs everytime when a pull_request to the main-branch is created
 on:
   pull_request:
-    branches:
-      - main
+    branches: [ test, main ]
 
 jobs:
   runtests:
